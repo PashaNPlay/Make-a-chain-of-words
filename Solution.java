@@ -31,12 +31,12 @@ public class Solution {
     }
 
     public static StringBuilder getLine(String... words) {
+        if (words.length == 0) return result;
+        
         String[] wordsClone = words.clone();
         StringBuilder result = new StringBuilder();
         StringBuilder buffer;
-
-        if (wordsClone.length == 0) return result;
-
+        
         for (int c = 0; c < wordsClone.length; c++) {
             wordsClone = words.clone();
             buffer = new StringBuilder();
