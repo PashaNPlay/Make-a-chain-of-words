@@ -33,7 +33,7 @@ public class Solution {
     public static StringBuilder getLine(String... words) {
         if (words.length == 0) return result;
         
-        String[] wordsClone = words.clone();
+        String[] wordsClone;
         StringBuilder result = new StringBuilder();
         StringBuilder buffer;
         
