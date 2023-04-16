@@ -42,7 +42,7 @@ public class Solution {
             buffer = new StringBuilder();
             String string = wordsClone[c];
             wordsClone[c] = "";
-            buffer.append(string.concat(" "));
+            buffer.append(string).append(" ");
 
             for (int i = 0; i < wordsClone.length; i++) {
                 if (wordsClone[i].length() != 0 && string.length() != 0) {
@@ -52,7 +52,7 @@ public class Solution {
                     
                     //start learning how the program works from here:
                     if (Objects.equals(Character.toLowerCase(last), Character.toLowerCase(first))) {
-                        buffer.append(wordsClone[i].concat(" "));
+                        buffer.append(wordsClone[i]).append(" ");
                         string = wordsClone[i];
                         wordsClone[i] = "";
                         i = -1;
