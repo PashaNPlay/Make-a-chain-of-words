@@ -52,8 +52,8 @@ public class Solution {
                     
                     //start learning how the program works from here:
                     if (Objects.equals(Character.toLowerCase(last), Character.toLowerCase(first))) {
-                        buffer.append(wordsClone[i]).append(" ");
                         link = wordsClone[i];
+                        buffer.append(link).append(" ");
                         wordsClone[i] = "";
                         i = -1;
                     }
