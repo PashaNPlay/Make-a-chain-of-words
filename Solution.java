@@ -40,20 +40,20 @@ public class Solution {
         for (int c = 0; c < wordsClone.length; c++) {
             wordsClone = words.clone();
             buffer = new StringBuilder();
-            String string = wordsClone[c];
+            String link = wordsClone[c];
             wordsClone[c] = "";
-            buffer.append(string).append(" ");
+            buffer.append(link).append(" ");
 
             for (int i = 0; i < wordsClone.length; i++) {
-                if (wordsClone[i].length() != 0 && string.length() != 0) {
+                if (wordsClone[i].length() != 0 && link.length() != 0) {
 
-                    char last = string.charAt(string.length() - 1);
+                    char last = link.charAt(link.length() - 1);
                     char first = wordsClone[i].charAt(0);
                     
                     //start learning how the program works from here:
                     if (Objects.equals(Character.toLowerCase(last), Character.toLowerCase(first))) {
                         buffer.append(wordsClone[i]).append(" ");
-                        string = wordsClone[i];
+                        link = wordsClone[i];
                         wordsClone[i] = "";
                         i = -1;
                     }
