@@ -47,11 +47,11 @@ public class Solution {
             for (int i = 0; i < wordsClone.length; i++) {
                 if (wordsClone[i].length() != 0 && string.length() != 0) {
 
-                    char last = string.toLowerCase().charAt(string.length() - 1);
-                    char first = wordsClone[i].toLowerCase().charAt(0);
+                    char last = string.charAt(string.length() - 1);
+                    char first = wordsClone[i].charAt(0);
                     
                     //start learning how the program works from here:
-                    if (last == first ) {
+                    if (Objects.equals(Character.toLowerCase(last), Character.toLowerCase(first))) {
                         buffer.append(wordsClone[i].concat(" "));
                         string = wordsClone[i];
                         wordsClone[i] = "";
