@@ -51,7 +51,7 @@ public class Solution {
                     char first = wordsClone[i].charAt(0);
                     
                     //start learning how the program works from here:
-                    if (Objects.equals(Character.toLowerCase(last), Character.toLowerCase(first))) {
+                    if (Character.toLowerCase(last) == Character.toLowerCase(first)) {
                         searchWord = wordsClone[i];
                         buffer.append(searchWord).append(" ");
                         wordsClone[i] = "";
