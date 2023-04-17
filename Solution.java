@@ -31,7 +31,7 @@ public class Solution {
     }
 
     public static StringBuilder getLine(String... words) {
-        if (words.length == 0) return result;
+        if (words.length == 0) return new StringBuilder();
         
         String[] wordsClone;
         StringBuilder result = new StringBuilder();
